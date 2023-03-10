@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificacion Guerra Territorial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scripts/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <h1>PLANIFICACION GUERRRA TERITORIAL ARCS MEXICO</h1>
+
+    <main>
+        <div id="map" class="map">
+            <div class="ships2 sector">
+                <h3>SHIPS 2</h3>
+                <ul>
+                    <li>
+                        <label for="team">Team:</label>
+                        <select id="shipsteam2" name="shipsteam2">
+                            <option value=""></option>
+                            <option value="RG">RG</option>
+                            <option value="Malevolence">Maleolence</option>
+                            <option value="Finalizador">Finalizador</option>
+                            <option value="Rebeldes">Rebeldes</option>
+                            <option value="Imperio">imperio</option>
+                        </select>
+                    </li>
+                    <li id="ships2-ejecutor">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">EJECUTOR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="ships2-profunidad">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">PROFUNIDAD</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ships1 sector">
+                <h3>SHIPS 1</h3>
+                <ul>
+                    <li>
+                        <label for="team">Team:</label>
+                        <select id="shipsteam1" name="shipsteam1">
+                        </select>
+                    </li>
+
+                    <li id="ships1-ejecutor">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">EJECUTOR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="ships1-profunidad">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">PROFUNIDAD</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="n2 sector">
+                <h3>NORTH 2</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsN2" name="teamsN2">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="n2-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n2-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n2-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n2-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n2-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n2-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n2-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="n1 sector">
+                <h3>NORTH 1</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsN1" name="teamsN1">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="n1-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n1-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n1-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n1-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n1-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n1-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n1-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="n4 sector">
+                <h3>NORTH 4</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsN4" name="teamsN4">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="n4-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n4-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n4-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n4-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n4-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n4-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n4-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="n3 sector">
+                <h3>NORTH 3</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsN3" name="teamsN3">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="n3-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n3-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n3-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n3-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n3-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n3-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="n3-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="s4 sector">
+                <h3>SUOUTH 4</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsS4" name="teamsS4">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="s4-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s4-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s4-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s4-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s4-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s4-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s4-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="s3 sector">
+                <h3>SUOUTH 3</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsS3" name="teamsS3">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="s3-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s3-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s3-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s3-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s3-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s3-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s3-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="s2 sector">
+                <h3>SUOUTH 2</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsS2" name="teamsS2">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="s2-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s2-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s2-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s2-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s2-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s2-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s2-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="s1 sector">
+                <h3>SUOUTH 1</h3>
+                <ul>
+                    <li class="li-team">
+                        <label for="team">Team:</label>
+                        <select id="teamsS1" name="teamsS1">
+                        </select>
+                        <button class="add-team">+</button>
+                    </li>
+
+                    <li id="s1-rey">
+                        <div>
+                            <p class="nombreLeyendaP">REY</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s1-slkr">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SLKR</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s1-jml">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JML</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s1-jmk">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JMK</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s1-see">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">SEE</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s1-lv">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">LV</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                    <li id="s1-jabba">
+                        <div class="nombreLeyenda">
+                            <p class="nombreLeyendaP">JABBA</p>
+                        </div>
+                        <div class="counter">
+                            <button class="restar">-</button>
+                            <p class="nLegend">0</p>
+                            <button class="sumar">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="data">
+            <h2>DATA</h2> <button id="botonconsola">BOTON CONSOLA</button>
+            <p id="parrafoN1">Equipos y Leyendas N1</p><br>
+            <p id="parrafoS1">Equipos y Leyendas S1</p><br>
+            <p id="parrafoN2">Equipos y Leyendas N2</p><br>
+            <p id="parrafoS2">Equipos y Leyendas S2</p><br>
+            <p id="parrafoN3">Equipos y Leyendas N3</p><br>
+            <p id="parrafoS3">Equipos y Leyendas S3</p><br>
+            <p id="parrafoN4">Equipos y Leyendas N4</p><br>
+            <p id="parrafoS4">Equipos y Leyendas S4</p><br>
+            <p id="parrafoShips1">Equipos y naves 1</p><br>
+            <p id="parrafoShips2">Equipos y naves 2</p>
+        </div>
+
+
+
+    </main>
+
+</body>
+
+</html>

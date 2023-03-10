@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.data{
+    background-color: lightcoral;
+}
+
+h1{
+    text-align: center;
+}
+
+.map {
+    margin: 1% 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "ships2 ships1 n2 n1"
+        "ships2 ships1 n2 n1"
+        "n4 n3 n2 n1"
+        "n4 n3 s2 s1"
+        "s4 s3 s2 s1"
+        "s4 s3 s2 s1";
+    
+    border-radius: 50px 50px 50px 20px;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+.ships2 {
+    grid-area: ships2;
+    border-radius: 50px 0px 0px 0px;
+}
+
+.n4 {
+    grid-area: n4;
+}
+
+.s4 {
+    grid-area: s4;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.ships1 {
+    grid-area: ships1;
+}
+
+.n1 {
+    grid-area: n1;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.s1 {
+    grid-area: s1;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.n3 {
+    grid-area: n3;
+}
+
+.s3 {
+    grid-area: s3;
+}
+
+.n2 {
+    grid-area: n2;
+}
+
+.s2 {
+    grid-area: s2;
+}
+
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+
+li:nth-child(even){
+    background-color:rgba(144, 238, 144, 0.3)
+}
+li:nth-child(odd){
+    background-color:rgba(135, 206, 250, 0.3)
+}
+li:first-child{
+    background-color:rgba(128, 128, 128, 0.3);
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.nLegend{
+    width: 25px;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    background-color: none;
+}
+
+.sector {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    justify-content:space-around
+}
+
+.sector:hover{
+    background-color: aquamarine;
+}
+.sector:hover h3{
+    color: blue;
+}
+
+button{
+    width: 20px;
+    height: 20px;
+}
+
+#botonconsola{
+    width: auto;
+}
