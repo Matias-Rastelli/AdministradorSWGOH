@@ -279,6 +279,37 @@ function renderParrafoS4(){
     document.getElementById("parrafoS4").innerHTML = parrafoS4;
 }
 
+function renderParrafoShips1(){
+    const equipoShips1 = document.getElementById("shipsteam1")
+    const valueEquipoShips1 = equipoShips1.value
+
+    let parrafoShips1 = "Ships1" + valueEquipoShips1
+    if (window.constant.ships1ejecutor.number != 0) {
+        parrafoShips1 += " - " + window.constant.ships1ejecutor.legend + ": " + window.constant.ships1ejecutor.number
+    }
+    if (window.constant.ships1profundidad.number != 0) {
+        parrafoShips1 += " - " + window.constant.ships1profundidad.legend + ": " + window.constant.ships1profundidad.number
+    }
+    
+    document.getElementById("parrafoShips1").innerHTML = parrafoShips1;
+}
+
+function renderParrafoShips2(){
+    const equipoShips2 = document.getElementById("shipsteam2")
+    const valueEquipoShips2 = equipoShips2.value
+
+    let parrafoShips2 = "Ships2" + valueEquipoShips2
+    if (window.constant.ships2ejecutor.number != 0) {
+        parrafoShips2 += " - " + window.constant.ships2ejecutor.legend + ": " + window.constant.ships2ejecutor.number
+    }
+    if (window.constant.ships2profundidad.number != 0) {
+        parrafoShips2 += " - " + window.constant.ships2profundidad.legend + ": " + window.constant.ships2profundidad.number
+    }
+    
+    document.getElementById("parrafoShips2").innerHTML = parrafoShips2;
+}
+
+console.log(window.constant)
 
 function render() {
     renderParrafoN1()
@@ -289,6 +320,8 @@ function render() {
     renderParrafoS3()
     renderParrafoN4()
     renderParrafoS4()
+    renderParrafoShips1()
+    renderParrafoShips2()
 }
 
 document.getElementById("botonconsola").addEventListener("click", ()=> render() )
